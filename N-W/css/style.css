@@ -48,6 +48,19 @@ section {
 }
 
 /* =========================================
+                Preloader
+============================================ */
+#preloader {
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+/* =========================================
                 Home
 ============================================ */
 #home {
@@ -648,3 +661,257 @@ ul.social-list li:nth-child(3) a:hover {
 	position: relative;
 }
 
+/* =========================================
+                Story area
+============================================ */
+
+.story_area {
+	position: relative;
+	z-index: 20;
+}
+.story_area > ul {
+    box-sizing: border-box;
+    display: table;
+    height: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.story_area > ul:before {
+    background: #fae1e4 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: calc(50% - 1px);
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
+.story_area > ul > li {
+    overflow: hidden;
+    position: relative;
+}
+.story_area > ul > li:nth-child(2n+1) .single_story_wrapper {
+    float: right;
+    width: 47%;
+}
+.story_area > ul > li:nth-child(2n) .single_story_wrapper {
+    float: left;
+    width: 47%;
+}
+.story_area > ul > li .story-sub-big {
+    background-color: #f8896b;
+    border-radius: 33px;
+    color: #fefefe;
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    left: calc(50% - 45px);
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    width: 92px;
+}
+.story_content_wrapper {
+    background-color: #4ABDAC;
+    margin-top: 58px;
+    margin-bottom: 55px;
+    padding: 10px;
+    display: table;
+    position: relative;
+}
+.story_area > ul > li:nth-child(2n+1) .story_content_wrapper {
+    border-radius: 0 108px 108px 0;
+}
+.story_area > ul > li:nth-child(2n) .story_content_wrapper {
+    border-radius: 180px 0 0 180px;
+}
+.story_area > ul > li:nth-child(2n+1) .story_text {
+    text-align: left;
+}
+.story_text {
+    color: #fefefe;
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: calc(100% - 161px);
+    font-family: 'Poppins', sans-serif;
+}
+.story_text h3 {
+    font-family: "Poppins",sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 14px;
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+.story_text h3 a {
+    color: #fefefe;
+}
+.story_img {
+    display: table-cell;
+    float: right;
+    padding-top: 1px;
+}
+.story_area > ul > li:nth-child(2n+1) .story_img img {
+    border-radius: 0 50px 50px 0;
+}
+.story_area > ul > li:nth-child(2n) .story_img img {
+    border-radius: 50px 0 0 50px;
+}
+.story_area > ul > li:nth-child(2n) .story_text {
+    padding-right: 0;
+}
+.story_area > ul > li:nth-child(2n) .story_img {
+}
+.story-sub-sm {
+    padding-right: 30px;
+    position: absolute;
+    top: 55%;
+    color: #f8896b;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.story_area > ul > li:nth-child(2n+1) .story-sub-sm {
+    padding-right: 30px;
+    right: 50%;
+}
+.story_area > ul > li:nth-child(2n) .story-sub-sm {
+    padding-left: 30px;
+    left: 50%;
+}
+.story_content_wrapper:before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fae1e4;
+    border: 2px solid #4ABDAC;
+    top: 60%;
+}
+.story_area > ul > li:nth-child(2n+1) .story_content_wrapper:before {
+    left: -40px;
+}
+.story_area > ul > li:nth-child(2n) .story_content_wrapper:before {
+    right: -39px;
+}
+.story_content_wrapper::after {
+    border-bottom: 20px solid transparent;
+    border-right: 50px solid #4ABDAC;
+    bottom: 8px;
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(21deg);
+    transform: rotate(21deg);
+    z-index: -1;
+}
+.story_area > ul > li:nth-child(2n+1) .story_content_wrapper:after {
+    left: -45px;
+}
+.story_area > ul > li:nth-child(2n) .story_content_wrapper:after {
+    border-left: 50px solid #4ABDAC;
+    border-right: medium none transparent;
+    bottom: 10px;
+    right: -43px;
+    -webkit-transform: rotate(-26deg);
+    transform: rotate(-26deg);
+}
+.story_img > img {
+    width: initial;
+}
+.story_area > ul > li:nth-child(2n) .story_text {
+    float: right;
+    padding-right: 0;
+    width: calc(100% - 160px);
+}
+.story_area > ul > li:nth-child(2n) .story_img {
+    display: table-cell;
+    float: left;
+    padding-top: 1px;
+    vertical-align: middle;
+}
+
+/* This code is for button */
+
+.previous {
+    background-color: #f8896b;
+    height: 30px;
+    left: calc(50% - 75px);
+    bottom: 0;
+    position: absolute;
+    width: 90px;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+.previous a {
+    color: #fefefe;
+}
+
+/* This code is for hover */
+
+.single_story_wrapper:hover .story_content_wrapper:before {
+    border: 2px solid #f8896b;
+}
+.single_story_wrapper:hover .story_content_wrapper {
+    background-color: #f8896b;
+}
+.single_story_wrapper:hover .story_content_wrapper:after {
+    border-right: 50px solid #f8896b;
+}
+.story_area > ul > li:nth-child(2n) > .single_story_wrapper:hover .story_content_wrapper:after {
+    border-left: 50px solid #f8896b;
+}
+
+	/* transition */
+.story_content_wrapper:after ,.story_content_wrapper, .story_content_wrapper:before {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*    workout clips
+/*-----------------------------------------------------------------------------------*/
+
+.nw-video-container {
+	padding-top: 20px;
+	background: #F4F4F4;
+}
+
+.nw-video {
+	border: 1px solid #e6e6e6;
+	padding: 5px;
+}
+
+.nw-video:hover {
+	background: #4ABDAC;
+}
+
+.nw-video-frame {
+	transition: width 2s, height 2s;
+}
+
+.nw-video-frame:hover {
+		height: 300px;
+gre}
+
+.nw-row {
+	margin-bottom: 10px;
+}

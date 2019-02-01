@@ -1,3 +1,11 @@
+/* =========================================
+                Preloader
+============================================ */
+$(window).on('load', function () { // make sure that the site is fully loaded
+	$('#status').fadeOut();
+	$('#preloader').delay(350).fadeOut('slow');
+});
+
 
 /* =========================================
                 Responsive Tabs
@@ -7,6 +15,7 @@ $(function () {
 		animation: 'slide'
 	});
 });
+
 
 
 /* =========================================
@@ -27,3 +36,4 @@ $(function() {
 	
 
 });
+
