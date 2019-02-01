@@ -769,6 +769,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 .story_area > ul > li:nth-child(2n) .story_img {
 }
+
 .story-sub-sm {
     padding-right: 30px;
     position: absolute;
@@ -910,7 +911,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 .nw-video-frame:hover {
 		height: 300px;
-gre}
+}
 
 .nw-row {
 	margin-bottom: 10px;
