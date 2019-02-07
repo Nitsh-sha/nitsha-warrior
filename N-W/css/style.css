@@ -60,6 +60,18 @@ section {
 	z-index: 9999;
 }
 
+#status {
+	background-image: url(../img/preloader/preloader.gif);
+	background-repeat: no-repeat;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -35px;
+	margin-left: -35px;
+}
+
 /* =========================================
                 Home
 ============================================ */
@@ -277,19 +289,21 @@ section {
 	right: 0;
 	height: 100%;
 	width: 100%;
+	padding: 0;
+	border: 0;
 	opacity: 0;
 	transition: .5s ease-in-out;
 	background-color: #605f5f;
 }
 
-.text {
+a.text-transform {
 	color: #fff;
 	font-size: 20px;
 	font-weight: 100;
 	position: absolute;
 	border: 2px solid #fff;
 	border-radius: 4px;
-	padding: 6px 15px;
+	padding: 5px;
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -302,13 +316,19 @@ section {
 	opacity: 1;
 }
 
+a.overlay-transform {
+	height: 20%;
+}
+
+
+
 
 
 /* =========================================
                Bio
 ============================================ */
 #bio {
-	background-color: #fff;
+	background-color: #F4F4F4;
 }
 
 
@@ -386,14 +406,14 @@ section {
 	background-color: #605f5f;
 }
 
-.text {
+a.text-bio {
 	color: #fff;
 	font-size: 20px;
 	font-weight: 100;
 	position: absolute;
 	border: 2px solid #fff;
 	border-radius: 4px;
-	padding: 6px 15px;
+	padding: 25px;
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -404,6 +424,10 @@ section {
 /* Hover state */
 .bio-bottom:hover .overlay {
 	opacity: 1;
+}
+
+a.overlay-bio {
+	height: 20%;
 }
 
 
@@ -668,6 +692,7 @@ ul.social-list li:nth-child(3) a:hover {
 .story_area {
 	position: relative;
 	z-index: 20;
+	padding-top: 20px;
 }
 .story_area > ul {
     box-sizing: border-box;
@@ -754,22 +779,23 @@ ul.social-list li:nth-child(3) a:hover {
     color: #fefefe;
 }
 .story_img {
-    display: table-cell;
-    float: right;
-    padding-top: 1px;
+	display: table-cell;
+	float: right;
+	padding-top: 1px;
 }
 .story_area > ul > li:nth-child(2n+1) .story_img img {
-    border-radius: 0 50px 50px 0;
+	border-radius: 0 50px 50px 0;
+	padding: 20px;
 }
 .story_area > ul > li:nth-child(2n) .story_img img {
-    border-radius: 50px 0 0 50px;
+	border-radius: 50px 0 0 50px;
+	padding: 20px;
 }
 .story_area > ul > li:nth-child(2n) .story_text {
     padding-right: 0;
 }
 .story_area > ul > li:nth-child(2n) .story_img {
 }
-
 .story-sub-sm {
     padding-right: 30px;
     position: absolute;
@@ -910,9 +936,18 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .nw-video-frame:hover {
-		height: 300px;
+	height: 300px;
 }
 
 .nw-row {
 	margin-bottom: 10px;
+}
+
+.label-text {
+	font-family: "Raleway", sans-serif;
+	font-weight: 200;
+	color: #fefefe;
+	background-color: #F7B733;
+	border-radius: 0;
+
 }
