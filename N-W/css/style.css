@@ -73,6 +73,23 @@ section {
 }
 
 /* =========================================
+                Content Boxes
+============================================ */
+.content-box-lg {
+	padding: 120px 0;
+
+}
+
+.content-box-md {
+	padding: 100px 0;
+}
+
+.content-box-sm {
+	padding: 90px 0;
+}
+
+
+/* =========================================
                 Home
 ============================================ */
 #home {
@@ -435,54 +452,93 @@ a.overlay-bio {
 /* =========================================
                Contact
 ============================================ */
-#contact {
+#contacts {
 	background-color: #F4F4F4;
+	display: flex;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
 }
 
-.contact-left-heading h2 {
-	font-size: 20px;
-	padding-bottom: 20px;
-}
-
-.other-info h2 {
-	font-size: 20px;
-	padding-bottom: 20px;
-
-}
-
-ul.contact-info {
+ul.contact {
 	list-style: none;
 	padding: 0;
 }
 
-ul.contact-info li {
+ul.contact li {
 	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
-	margin-top: 12px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	height: 100%;
 }
 
-ul.contact-info li i {
+ul.contact li i {
 	font-size: 25px;
 	width: 45px;
 }
 
-.other-info ul.social-list li a {
-	color: #212226;
-	border: 1px solid #212226;
-	text-align: center;
-}
-
-.other-info ul.social-list li a:hover {
+ul.social-list li a:hover {
 	color: #fff;
 	border-color: transparent;
 }
 
-#contact .content-box-sm {
-	padding: 40px 0;
+.contact-info {
+	flex-basis: 25%;
+	flex-shrink: 0;
+	flex-grow: 0;
 }
+
+i.fa.fa-size-adjust {
+	margin: 0;
+	padding: 10px;
+}
+
+div.contact-info {
+	vertical-align: middle;
+}
+
+
+/* =========================================
+               Social Icons
+============================================ */
+ul.social-list {
+	padding: 0;
+}
+
+ul.social-list li {
+	display: inline-block;
+	padding: 0;
+}
+
+ul.social-list li a {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	color: #75777c;
+	border: 1px solid #75777c;
+	text-align: center;
+	-webkit-transition: all 400ms linear;
+	transition: all 400ms linear;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+	background: #a439dd;
+	
+	border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+	background: #3b5998;
+	border-color: transparent;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+	background: #00aced;
+	border-color: transparent;
+}
+
 
 /* =========================================
                 Footer
@@ -610,63 +666,6 @@ ul.navbar-nav > li > a:focus {
 #arrow-down:hover,
 #arrow-down:focus {
 	color: #f46f4b;
-}
-
-/* =========================================
-                Content Boxes
-============================================ */
-.content-box-lg {
-	padding: 120px 0;
-
-}
-
-.content-box-md {
-	padding: 100px 0;
-}
-
-.content-box-sm {
-	padding: 90px 0;
-}
-
-/* =========================================
-               Social Icons
-============================================ */
-ul.social-list {
-	padding: 0;
-	margin-top: 20px;
-}
-
-ul.social-list li {
-	display: inline-block;
-	padding: 0;
-}
-
-ul.social-list li a {
-	border: 1px solid #fff;
-	width: 30px;
-	height: 30px;
-	display: inline-block;
-	line-height: 30px;
-	border-radius: 50%;
-	color: #fff;
-	-webkit-transition: all 400ms linear;
-	transition: all 400ms linear;
-}
-
-ul.social-list li:nth-child(1) a:hover {
-	background: #a439dd;
-	
-	border-color: transparent;
-}
-
-ul.social-list li:nth-child(2) a:hover {
-	background: #3b5998;
-	border-color: transparent;
-}
-
-ul.social-list li:nth-child(3) a:hover {
-	background: #00aced;
-	border-color: transparent;
 }
 
 
@@ -911,11 +910,9 @@ ul.social-list li:nth-child(3) a:hover {
     -moz-transition: 0.5s;
 }
 
-
-
-/*-----------------------------------------------------------------------------------*/
-/*    workout clips
-/*-----------------------------------------------------------------------------------*/
+/* =========================================
+                workout clips
+============================================ */
 
 .nw-video-container {
 	padding-top: 20px;
@@ -928,7 +925,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .nw-video:hover {
-	background: #4ABDAC;
+	/*background: #4ABDAC;*/
 }
 
 .nw-video-frame {
@@ -949,5 +946,4 @@ ul.social-list li:nth-child(3) a:hover {
 	color: #fefefe;
 	background-color: #F7B733;
 	border-radius: 0;
-
 }
