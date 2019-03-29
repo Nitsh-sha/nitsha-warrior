@@ -1,4 +1,4 @@
-# Your Project's Name
+# Simon Game
 
 This is a responsive website showcasing my fitness personal training services focusing mainly on female clients. All services are catered to fitness needs of modern women including pre and postnatal rehabilitation, strength training, and weight loss. The website also shows sample workout clips as well as trainer’s brief biography and fitness philosophy. Audience can contact to request further information or click to social media links to see other references.
 
