@@ -90,6 +90,13 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ### Media
 
+### Media
+
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from
+https://www.hamsayoga.dk/en
+https://www.kiamiller.com/
+https://poweryoga.com/
+https://www.patrickbeach.com/
+https://www.wandabadwal.com/
